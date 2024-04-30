@@ -1,0 +1,39 @@
+.data{
+    display: flex;
+}
+.data2{
+    flex-direction: row-reverse;
+}
+.data div{
+    width: 50%;
+}
+/* for medium device */
+
+@media screen and (min-width: 576px) and (max-width: 1180px){
+    .data{
+        gap: 20px;
+    }
+    .data div{
+        width: 50%;
+    }
+    .data div img{
+        width: 100%;
+    }
+
+    
+}
+
+/* for small device */
+
+@media screen and (max-width : 576px) {
+    .data{
+        flex-direction: column;    
+    }
+    /* .data2{
+        flex-direction: row-reverse;
+    } */
+    .data div, img{
+        width: 100%;
+    }
+    
+}
